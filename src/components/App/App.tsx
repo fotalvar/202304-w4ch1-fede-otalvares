@@ -1,5 +1,4 @@
 import Gentleman from "../Gentleman/Gentleman";
-import Info from "../Info/Info";
 import { GentlemanStructure } from "../types";
 
 const App = (): JSX.Element => {
@@ -41,12 +40,7 @@ const App = (): JSX.Element => {
       <header className="main-header">
         <h1 className="main-title">Señores que te apuntan con el dedo</h1>
       </header>
-      <section className="controls">
-        <Info />
-        <button type="button" className="button button--select">
-          Marcar todos
-        </button>
-      </section>
+      <section className="controls"></section>
       <main className="main">
         <ul className="gentlemen">
           {gentleman.map((gentleman) => (
