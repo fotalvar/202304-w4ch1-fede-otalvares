@@ -44,9 +44,7 @@ const App = (): JSX.Element => {
       <main className="main">
         <ul className="gentlemen">
           {gentleman.map((gentleman) => (
-            <li key={gentleman.id}>
-              <Gentleman {...gentleman} />
-            </li>
+            <Gentleman {...gentleman} key={gentleman.id} />
           ))}
         </ul>
       </main>
